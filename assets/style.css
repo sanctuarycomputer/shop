@@ -1,0 +1,98 @@
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --navy: #073763;
+  --light-grey: #f7f7f7;
+  --black: #1d1d1d;
+}
+
+body {
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: var(--black);
+  font-family: 'Austin News Deck', serif;
+  margin: 0;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2.6rem;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+p {
+  margin-bottom: 22px;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+}
+
+.bookend {
+  background-color: var(--light-grey);
+}
+
+.logo {
+  margin-top: 2rem;
+  width: 90px;
+}
+
+strong {
+  color: var(--navy);
+}
+
+a {
+  font-weight: 500;
+  color: var(--navy);
+  text-decoration: none;
+  border-bottom: 1px solid var(--navy);
+}
+
+a.no-underline {
+  border-bottom: none;
+}
+
+video {
+  width: 100%;
+}
+
+@media (min-width: 52em) {
+  h1 {
+    font-size: 3.6rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@font-face {
+	font-family: 'Austin News Deck';
+	src: url('AustinNewsDeck-Light-Web.eot');
+	src: local('Austin News Deck'), local('Austin News Deck Light'),
+		url('/fonts/AustinNewsDeck-Light-Web.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/AustinNewsDeck-Light-Web.woff2') format('woff2'),
+		url('/fonts/AustinNewsDeck-Light-Web.woff') format('woff'),
+		url('/fonts/AustinNewsDeck-Light-Web.ttf') format('truetype'),
+		url('/fonts/AustinNewsDeck-Light-Web.svg#Calibre-Black') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Austin News Deck';
+	src: url('AustinNewsDeck-Roman-Web.eot');
+	src: local('Austin News Deck'), local('Austin News Deck Roman'),
+		url('/fonts/AustinNewsDeck-Roman-Web.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/AustinNewsDeck-Roman-Web.woff2') format('woff2'),
+		url('/fonts/AustinNewsDeck-Roman-Web.woff') format('woff'),
+		url('/fonts/AustinNewsDeck-Roman-Web.ttf') format('truetype'),
+		url('/fonts/AustinNewsDeck-Roman-Web.svg#Calibre-Black') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
