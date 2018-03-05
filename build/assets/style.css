@@ -43,12 +43,50 @@ p {
   width: 90px;
 }
 
+#overlay {
+  display: none;
+  opacity: 0;
+  transition: opacity 400ms;
+}
+
+#overlay.active {
+  opacity: 1;
+}
+
 .overlay-container {
   background: white;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+}
+
+#close-overlay {
+  width: 20px;
+  top: 2em;
+  right: 2em;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.size-column p,
+.chest-column p {
+  margin: 0;
+}
+
+.size-row:nth-child(even) {
+  background: var(--light-grey);
 }
 
 strong {
   color: var(--navy);
+}
+
+p.small {
+  font-size: .9rem;
 }
 
 a {
@@ -73,6 +111,11 @@ video {
   h2 {
     font-size: 1.5rem;
     line-height: 1.9rem;
+  }
+
+  #close-overlay {
+    top: 4em;
+    right: 4em;
   }
 }
 
