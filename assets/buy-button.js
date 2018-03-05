@@ -30,7 +30,7 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
         id: [521990701092],
-        node: document.getElementById('product-component-3c41294536b'),
+        node: document.getElementById('product-component-19a4cf4d479'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -51,6 +51,7 @@
     },
     "styles": {
       "product": {
+        "text-align": "left",
         "@media (min-width: 601px)": {
           "max-width": "100%",
           "margin-left": "0",
