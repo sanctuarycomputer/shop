@@ -5,6 +5,7 @@ jobs:
       - image: circleci/node:8
     steps:
       - checkout
+      - run: sudo apt-get -y -qq install awscli
       - run: aws configure set preview.cloudfront true
       - run: aws s3 sync build s3://shop.sanctuary.computer/ --delete
       - run: aws cloudfront create-invalidation --distribution-id E1ZBZS93FJ48J5 --paths '/*'
