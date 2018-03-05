@@ -43,6 +43,10 @@ p {
   width: 90px;
 }
 
+.overlay-container {
+  background: white;
+}
+
 strong {
   color: var(--navy);
 }
