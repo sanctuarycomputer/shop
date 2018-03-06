@@ -11,6 +11,30 @@
 body {
 }
 
+.flag {
+  position: fixed;
+  height: 30px;
+  background-color: var(--navy);
+  width: 100%;
+  color: white;
+  font-size: 0.9rem;
+  letter-spacing: 0.0275rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Austin News Deck', serif;
+}
+
+::selection {
+  background: var(--navy);
+  color: white;
+}
+
+:-moz-selection {
+  background: var(--navy);
+  color: white;
+}
+
 h1, h2, h3, h4, h5, h6, p {
   color: var(--black);
   font-family: 'Austin News Deck', serif;
