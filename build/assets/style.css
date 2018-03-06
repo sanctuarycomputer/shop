@@ -60,6 +60,7 @@ p {
   bottom: 0;
   left: 0;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 #close-overlay {
